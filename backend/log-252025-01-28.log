@@ -1,0 +1,42 @@
+LOG 2025-01-28 14:55:45.25 PM error : uncaughtException: logger.err is not a function
+TypeError: logger.err is not a function
+    at deleteUser (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:155:12)
+LOG 2025-01-28 15:19:20.81 PM error : uncaughtException: logger.err is not a function
+TypeError: logger.err is not a function
+    at deleteUser (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:155:12)
+LOG 2025-01-28 15:19:22.56 PM error : uncaughtException: logger.err is not a function
+TypeError: logger.err is not a function
+    at deleteUser (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:155:12)
+LOG 2025-01-28 15:19:23.20 PM error : uncaughtException: logger.err is not a function
+TypeError: logger.err is not a function
+    at deleteUser (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:155:12)
+LOG 2025-01-28 21:59:48.100 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-28 22:03:20.40 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-28 22:05:51.58 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)

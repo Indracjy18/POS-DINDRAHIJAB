@@ -1,0 +1,158 @@
+// Generator untuk Prisma Client, digunakan untuk mengakses database melalui kode JavaScript/TypeScript
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Datasource untuk koneksi ke database MySQL, URL database diambil dari environment variable
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Model Category - menyimpan data kategori produk
+model Category {
+  id           Int       @id @default(autoincrement()) // Primary key
+  kategoryName String    // Nama kategori
+  Product      Product[] // Relasi ke tabel Product
+}
+
+// Model Product - menyimpan data produk
+model Product {
+  id                Int                 @id @default(autoincrement()) // Primary key
+  code              String              @unique // Kode produk, harus unik
+  barcode           String?             // Barcode produk (opsional)
+  productName       String              // Nama produk
+  image             String              // URL gambar produk
+  url               String              // URL halaman produk
+  qty               Int                 // Kuantitas produk
+  price             Decimal             // Harga produk
+  kategoryId        Int                 // Foreign key ke tabel Category
+  supplierId        Int                 // Foreign key ke tabel Supplier
+  createdAt         DateTime            @default(now()) // Tanggal pembuatan
+  updatedAt         DateTime            @updatedAt // Tanggal terakhir diperbarui
+  kategory          Category            @relation(fields: [kategoryId], references: [id]) // Relasi ke Category
+  supplier          Supplier            @relation(fields: [supplierId], references: [id]) // Relasi ke Supplier
+  Carts             Carts[]             // Relasi ke tabel Carts
+  Orderdetail       Orderdetail[]       // Relasi ke tabel Orderdetail
+  Orderreturndetail Orderreturndetail[] // Relasi ke tabel Orderreturndetail
+  Purchasedetail    Purchasedetail[]    // Relasi ke tabel Purchasedetail
+}
+
+// Model Supplier - menyimpan data pemasok
+model Supplier {
+  id        Int       @id @default(autoincrement()) // Primary key
+  firstName String    // Nama depan pemasok
+  lastName  String?   // Nama belakang pemasok (opsional)
+  phone     String    // Nomor telepon pemasok
+  email     String?   // Email pemasok (opsional)
+  address   String    // Alamat pemasok
+  Product   Product[] // Relasi ke tabel Product
+}
+
+// Model Carts - menyimpan data keranjang belanja
+model Carts {
+  id          Int     @id @default(autoincrement()) // Primary key
+  price       Decimal // Harga produk dalam keranjang
+  productName String  // Nama produk dalam keranjang
+  qty         Int     // Kuantitas produk
+  totalPrice  Decimal // Total harga produk
+  note        String  // Catatan tambahan
+  productId   Int     // Foreign key ke tabel Product
+  userId      Int     // Foreign key ke tabel User
+  user        User    @relation(fields: [userId], references: [id]) // Relasi ke User
+  product     Product @relation(fields: [productId], references: [id]) // Relasi ke Product
+}
+
+// Model Orders - menyimpan data pesanan
+model Orders {
+  id          Int           @id @default(autoincrement()) // Primary key
+  date        DateTime      @default(now()) // Tanggal pesanan dibuat
+  code        String        @unique // Kode pesanan, harus unik
+  total       Decimal       // Total harga pesanan
+  ppn         Decimal       // Pajak pesanan
+  grandTotal  Decimal       // Total akhir pesanan
+  userId      Int           // Foreign key ke tabel User
+  user        User          @relation(fields: [userId], references: [id]) // Relasi ke User
+  Orderdetail Orderdetail[] // Relasi ke tabel Orderdetail
+  Orderreturn Orderreturn[] // Relasi ke tabel Orderreturn
+}
+
+// Model Orderdetail - menyimpan detail pesanan
+model Orderdetail {
+  id          Int     @id @default(autoincrement()) // Primary key
+  price       Decimal // Harga produk
+  productName String  // Nama produk
+  qty         Int     // Kuantitas produk
+  totalPrice  Decimal // Total harga
+  note        String  // Catatan tambahan
+  productId   Int     // Foreign key ke tabel Product
+  orderId     Int     // Foreign key ke tabel Orders
+  order       Orders  @relation(fields: [orderId], references: [id]) // Relasi ke Orders
+  product     Product @relation(fields: [productId], references: [id]) // Relasi ke Product
+}
+
+// Model User - menyimpan data pengguna
+model User {
+  id          Int           @id @default(autoincrement()) // Primary key
+  userName    String        @unique // Nama pengguna, harus unik
+  password    String        // Password pengguna
+  name        String        // Nama lengkap pengguna
+  role        String        // Peran pengguna
+  Carts       Carts[]       // Relasi ke tabel Carts
+  Orders      Orders[]      // Relasi ke tabel Orders
+  Orderreturn Orderreturn[] // Relasi ke tabel Orderreturn
+  Purchase    Purchase[]    // Relasi ke tabel Purchase
+}
+
+// Model Orderreturn - menyimpan data retur pesanan
+model Orderreturn {
+  id                Int                 @id @default(autoincrement()) // Primary key
+  code              String              // Kode retur
+  date              DateTime            @default(now()) // Tanggal retur
+  note              String?             // Catatan tambahan (opsional)
+  orderId           Int                 // Foreign key ke tabel Orders
+  userId            Int                 // Foreign key ke tabel User
+  user              User                @relation(fields: [userId], references: [id]) // Relasi ke User
+  order             Orders              @relation(fields: [orderId], references: [id]) // Relasi ke Orders
+  Orderreturndetail Orderreturndetail[] // Relasi ke tabel Orderreturndetail
+}
+
+// Model Orderreturndetail - menyimpan detail retur pesanan
+model Orderreturndetail {
+  id          Int         @id @default(autoincrement()) // Primary key
+  productId   Int         // Foreign key ke tabel Product
+  productName String      // Nama produk
+  price       Decimal     // Harga produk
+  qty         Int         // Kuantitas produk
+  total       Decimal     // Total harga
+  returnId    Int         // Foreign key ke tabel Orderreturn
+  orderreturn Orderreturn @relation(fields: [returnId], references: [id]) // Relasi ke Orderreturn
+  product     Product     @relation(fields: [productId], references: [id]) // Relasi ke Product
+}
+
+// Model Purchase - menyimpan data pembelian
+model Purchase {
+  id             Int              @id @default(autoincrement()) // Primary key
+  code           String           // Kode pembelian
+  date           DateTime         // Tanggal pembelian
+  note           String           // Catatan tambahan
+  total          Decimal          // Total harga pembelian
+  ppn            Decimal          // Pajak pembelian
+  grandTotal     Decimal          // Total akhir pembelian
+  userId         Int              // Foreign key ke tabel User
+  user           User             @relation(fields: [userId], references: [id]) // Relasi ke User
+  Purchasedetail Purchasedetail[] // Relasi ke tabel Purchasedetail
+}
+
+// Model Purchasedetail - menyimpan detail pembelian
+model Purchasedetail {
+  id          Int      @id @default(autoincrement()) // Primary key
+  productId   Int      // Foreign key ke tabel Product
+  productName String   // Nama produk
+  price       Decimal  // Harga produk
+  qty         Int      // Kuantitas produk
+  total       Decimal  // Total harga
+  purchaseId  Int      // Foreign key ke tabel Purchase
+  purchase    Purchase @relation(fields: [purchaseId], references: [id]) // Relasi ke Purchase
+  product     Product  @relation(fields: [productId], references: [id]) // Relasi ke Product
+}

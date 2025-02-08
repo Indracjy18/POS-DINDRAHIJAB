@@ -1,0 +1,71 @@
+@BASE_URL = http://localhost:3000/api
+
+# Create a new user
+
+# Create a new user
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+  "name": "tonychopper",
+  "userName": "tonnychopper",
+  "password": "123456",
+  "confirmPassword": "123456",
+  "role": "admin"
+}
+
+## User login
+POST {{BASE_URL}}/users/login
+Content-Type: application/json
+{
+  "userName": "yanzen",
+  "password": "123456"
+}
+
+{{
+  $global.accessToken=JSON.parse(response.body).acessToken;
+  $global.refreshToken=JSON.parse(response.body).refreshToken;
+}}
+
+### Update User
+PUT {{BASE_URL}}/users/8
+Content-Type: application/json
+Authorization: Bearer {{$global.accessToken}}
+
+{
+  "name": "yosuanw",
+  "userName": "yosuanw",
+  "password": "yosuanw",
+  "confirmPassword": "yosuanw",
+  "role": "admin"
+}
+
+### delete User
+DELETE {{BASE_URL}}/users/14
+Content-Type: application/json
+Authorization: Bearer {{$global.accessToken}}
+
+{
+  "name": "tonychopper",
+  "userName": "tonnychopper",
+  "password": "123456",
+  "confirmPassword": "123456",
+  "role": "admin"
+}
+
+## get all user
+GET {{BASE_URL}}/users
+Authorization: Bearer {{$global.accessToken}}
+
+### get user by id
+GET {{BASE_URL}}/users/1
+Authorization: Bearer {{$global.accessToken}}
+
+### refresh token
+GET {{BASE_URL}}/users/refresh
+Authorization: Bearer {{$global.refreshToken}}
+
+{{
+  $global.accessToken=JSON.parse(response.body).acessToken;
+  $global.refreshToken=JSON.parse(response.body).refreshToken;
+}}

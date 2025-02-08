@@ -1,0 +1,22 @@
+LOG 2025-01-29 15:44:12.53 PM error : controllers/user.controller.js:getUserById - 
+Invalid `prisma.user.findUnique()` invocation:
+
+{
++ where: {
++   id: Int,
++   userName: String,
++   AND: UserWhereInput | UserWhereInput[],
++   OR: UserWhereInput[],
++   NOT: UserWhereInput | UserWhereInput[],
++   password: StringFilter | String,
++   name: StringFilter | String,
++   role: StringFilter | String,
++   Carts: CartsListRelationFilter,
++   Orders: OrdersListRelationFilter,
++   Orderreturn: OrderreturnListRelationFilter,
++   Purchase: PurchaseListRelationFilter
++ }
+}
+
+Argument `where` is missing.
+LOG 2025-01-29 15:44:40.62 PM error : controllers/user.controller.js:getUserById - id is not defined

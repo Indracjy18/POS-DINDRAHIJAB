@@ -1,0 +1,30 @@
+LOG 2025-02-05 21:55:29.26 PM error : uncaughtException: categoryRoute is not defined
+ReferenceError: categoryRoute is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/index.js:6:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-02-05 21:55:33.61 PM error : uncaughtException: categoryRout is not defined
+ReferenceError: categoryRout is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/index.js:6:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-02-05 21:55:36.73 PM error : uncaughtException: categoryRout is not defined
+ReferenceError: categoryRout is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/index.js:6:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-02-05 21:55:50.05 PM error : uncaughtException: categoryRout is not defined
+ReferenceError: categoryRout is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/index.js:6:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-02-05 21:56:03.57 PM error : uncaughtException: categoryRout is not defined
+ReferenceError: categoryRout is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/index.js:6:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)

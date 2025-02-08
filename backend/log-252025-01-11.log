@@ -1,0 +1,27 @@
+LOG 2025-01-11 00:11:51.49 AM error : controllers/userController.js:loginUser - generateRefreshToken is not defined
+LOG 2025-01-11 00:14:07.53 AM error : controllers/userController.js:loginUser - 
+Invalid `prisma.user.findUnique()` invocation:
+
+{
+  where: {
+    userName: undefined,
+?   id?: Int,
+?   AND?: UserWhereInput | UserWhereInput[],
+?   OR?: UserWhereInput[],
+?   NOT?: UserWhereInput | UserWhereInput[],
+?   password?: StringFilter | String,
+?   name?: StringFilter | String,
+?   role?: StringFilter | String,
+?   Carts?: CartsListRelationFilter,
+?   Orders?: OrdersListRelationFilter,
+?   Orderreturn?: OrderreturnListRelationFilter,
+?   Purchase?: PurchaseListRelationFilter
+  }
+}
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id` or `userName` arguments. Available options are marked with ?.
+LOG 2025-01-11 01:05:04.71 AM error : controllers/userController.js:createUser - 
+Invalid `prisma.user.create()` invocation:
+
+
+Unique constraint failed on the constraint: `User_userName_key`

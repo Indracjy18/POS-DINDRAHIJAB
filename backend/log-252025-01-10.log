@@ -1,0 +1,18 @@
+LOG 2025-01-10 22:19:34.65 PM error : uncaughtException: Cannot apply rules to empty ruleset or the last rule added does not support rule properties
+Error: Cannot apply rules to empty ruleset or the last rule added does not support rule properties
+    at new module.exports (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\@hapi\hoek\lib\error.js:23:19)
+    at module.exports (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\@hapi\hoek\lib\assert.js:21:11)
+    at internals.Base.rule (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\joi\lib\base.js:479:9)
+    at internals.Base.method [as message] (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\joi\lib\extend.js:145:29)
+    at userValidation (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/validations/user.validation.js:21:8)
+    at createUser (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:7:28)
+    at Layer.handle [as handle_request] (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\layer.js:95:5)
+LOG 2025-01-10 23:31:22.49 PM error : uncaughtException: isAuth is not defined
+ReferenceError: isAuth is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/userRoute.js:6:30
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)

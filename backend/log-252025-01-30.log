@@ -1,0 +1,153 @@
+LOG 2025-01-30 21:18:41.06 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:20:46.45 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:23:09.44 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:23:37.26 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:26:32.13 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:26:32.92 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:27:34.07 PM error : uncaughtException: setToken is not defined
+ReferenceError: setToken is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:254:32
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:28:33.57 PM error : uncaughtException: setToken is not defined
+ReferenceError: setToken is not defined
+    at setRefreshToken (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:206:15)
+    at Layer.handle [as handle_request] (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\route.js:149:13)
+    at isAuth (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/errorController.js:23:5)
+    at Layer.handle [as handle_request] (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\layer.js:95:5)
+    at D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\router\index.js:346:12)
+LOG 2025-01-30 21:29:21.56 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:30:25.41 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:32:16.02 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 21:37:50.84 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:37:59.26 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:39:05.61 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:39:06.90 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:39:12.85 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:39:54.90 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:43:10.99 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:43:19.77 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:43:54.44 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:54:06.28 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:54:18.01 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:54:21.15 PM error : uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (D:\PORTOFOLIO-WEB\pos-app-dindrahijab\backend\node_modules\express\lib\application.js:635:24)
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/index.js:9:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+LOG 2025-01-30 21:55:19.22 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 22:11:26.19 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 22:15:51.68 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 22:16:13.02 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 22:18:12.18 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
+LOG 2025-01-30 22:18:53.14 PM error : controllers/user.controller.js:setRefreshToken - Unexpected token '�', "���z�S�G�" is not valid JSON
