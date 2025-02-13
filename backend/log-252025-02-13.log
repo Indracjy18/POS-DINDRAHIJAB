@@ -1,0 +1,6 @@
+LOG 2025-02-13 22:29:53.17 PM error : uncaughtException: categoryRoute is not defined
+ReferenceError: categoryRoute is not defined
+    at file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/routes/index.js:7:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)

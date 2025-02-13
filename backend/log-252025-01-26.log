@@ -1,3 +1,0 @@
-LOG 2025-01-26 00:07:14.87 AM error : uncaughtException: logger.err is not a function
-TypeError: logger.err is not a function
-    at deleteUser (file:///D:/PORTOFOLIO-WEB/pos-app-dindrahijab/backend/src/controllers/userController.js:155:12)
